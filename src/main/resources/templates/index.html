@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <style>
         * {
@@ -21,10 +22,10 @@
 
         @media only screen and (max-width: 768px) {
             body {
-                padding: 20px 5px;
+                padding: 20px 10px;
             }
             .label {
-                font-size: 14px;
+                font-size: 1rem;
             }
             .tabs {
                 flex-direction: column;
@@ -42,10 +43,10 @@
 
         @media only screen and (min-width: 1201px) {
             body {
-                padding: 60px 10px;
+                padding: 60px 30px;
             }
             .label {
-                font-size: 18px;
+                font-size: 1.4rem;
             }
         }
 
@@ -56,7 +57,7 @@
           box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
           margin-top:-58px;
           margin-bottom:0px;
-          width: 10000%;
+          width: 100%;
         }
         .input {
           opacity: 0;
@@ -113,13 +114,14 @@
         .mainbody{
             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTRnQqoy8XburHvphQ7wgXwkmyxQHjOJwlciKYjIcrqOjpcJD3tBlGCVk4hAitlcVVI0&usqp=CAU);
             background-repeat: no-repeat;
-            background-size: auto;
+            background-size: cover;
             background-position:top;
             height: 125%;
         }
         .main{
-            min-height:70vh;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
 
@@ -131,7 +133,8 @@
             }
 
         .contain{
-            width: 345px;
+            width: 100%;
+            max-width: 345px;
             overflow: hidden;
             margin-top: -60px;
             }
@@ -169,7 +172,7 @@
                 background: transparent;
                 border: 2px solid #bc8cf2;
                 text-decoration: none;
-                padding: 8px 30px;
+                padding: 12px 35px;
                 display: inline-block;
                 margin-top: 30px;
                 color: #fff;
@@ -193,7 +196,7 @@
 
      .polaroid {
        display: block;
-       width: 96%;
+       width: 100%;
        height: auto;
        margin-top:65px;
            }
